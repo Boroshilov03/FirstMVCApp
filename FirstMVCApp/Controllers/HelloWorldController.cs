@@ -7,10 +7,14 @@ namespace FirstMVCApp.Controllers
     {
         public IActionResult Index()
         {
-            DogViewModel doggo = new DogViewModel() { Name="Ball", Age=13};
+            DogViewModel doggo = new DogViewModel() { Name="Ball", Age=13 };
             return View(doggo);
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
         public string Hello()
         {
             return "Hello";
